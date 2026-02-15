@@ -9,21 +9,36 @@ export default function Home() {
       <div>
         Finite Scroll animation
       </div>
-      <Link
-        href="/scroll"
-        style={{
-          display: "inline-block",
-          marginTop: "1rem",
-          padding: "0.5rem 1rem",
-          background: "#333",
-          color: "white",
-          borderRadius: "6px",
-          textDecoration: "none",
-          cursor: "pointer",
-        }}
-      >
-        Infinite Scroll
-      </Link>
+      <div style={{ display: "flex", gap: "0.5rem", marginTop: "1rem", flexWrap: "wrap" }}>
+        <Link
+          href="/scroll"
+          style={{
+            display: "inline-block",
+            padding: "0.5rem 1rem",
+            background: "#333",
+            color: "white",
+            borderRadius: "6px",
+            textDecoration: "none",
+            cursor: "pointer",
+          }}
+        >
+          Infinite Scroll
+        </Link>
+        <Link
+          href="/carousel"
+          style={{
+            display: "inline-block",
+            padding: "0.5rem 1rem",
+            background: "#333",
+            color: "white",
+            borderRadius: "6px",
+            textDecoration: "none",
+            cursor: "pointer",
+          }}
+        >
+          WebGL Carousel
+        </Link>
+      </div>
     </main>
   );
 }
